@@ -94,9 +94,9 @@ body{
     margin-top: 30px;
 }
 
-.timeline{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.bullet{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .alarms-list{
