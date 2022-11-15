@@ -1,0 +1,165 @@
+:root{
+    --orange-gradient: linear-gradient(#fb8600, #c3c3c3);
+    --grey-gradient: linear-gradient(#4b4458, #c3c3c3);
+    --cream-gradient: linear-gradient(#e0d5b7, #c3c3c3);
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: var(--grey-gradient);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+
+.user{
+    position: relative;
+    display: inline-block;
+    
+    border: 2px solid #656565c6;
+    border-radius: 50%;
+    
+    height: 50px;
+    aspect-ratio: 1/1;
+    
+    background-image: url(img/demo-pfp.jpg);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background-size: cover;
+}
+
+.user:nth-child(2){
+    transform: translate(-20px);
+    background-image: url(img/demo-pfp2.jpg);
+    z-index: -1;
+}
+
+.add-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+
+    background-color: #ffffff25;
+    border-radius: 50%;
+    border: 1px solid #0000003b;
+    height: 50px;
+    aspect-ratio: 1/1;
+
+}
+
+.add-user img{
+
+    width: 16px
+
+}
+
+.users{
+    
+    display: flex;
+    align-items: center;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+
+.dropdown-menu{
+    /* margin-right: 20px; */
+    justify-self: end;
+    margin-left: auto;
+    transform: scale(0.8);
+}
+
+
+.alarm-clock{
+    color: white;
+    text-align: center;
+}
+
+.hours, .minutes{
+    padding: 20px;
+    font-size: 100px;
+}
+
+.featured-item{
+    margin-top: 30px;
+}
+
+.timeline{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.alarms-list{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.alarm{
+    padding: 15px;
+    padding-right: 0;
+    border-top: 1px solid #ffffff4d;
+    margin: 0 15px 0;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.alarm-time{
+    text-align: left;
+    font-size: 70px;
+    font-weight: 300;
+}
+
+.alarm-info{
+    font-size: 15px;
+    color: #ffffffa5;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.alarm-description, .alarm-ringtone, .alarm-edit{
+    border: 1px solid;
+    border-radius: 15px;
+    padding:5px 10px;
+    margin: 5px;
+}
+
+.alarm-edit{
+    margin-left: auto;
+    background-color: #b9b9b9ac;
+    color: #ffffffc8;
+    border: none;
+}
+
+.schedule-overview{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 10px;
+}
+
+.action-name{
+    font-size: 20px;
+}
+
+.duration{
+    padding: 5px;
+}
+
+.start-time,.end-time{
+    font-size: 15px;
+    color: #ffffffa5;
+    display: inline-block;
+}
