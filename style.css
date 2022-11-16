@@ -1,12 +1,12 @@
 :root{
-    --orange-gradient: linear-gradient(#fb8600, #c3c3c3);
-    --grey-gradient: linear-gradient(#4b4458, #c3c3c3);
-    --cream-gradient: linear-gradient(#e0d5b7, #c3c3c3);
+    --orange-gradient: linear-gradient(#fb8600, #b4b4b4);
+    --grey-gradient: linear-gradient(#4b4458, #b4b4b4);
+    --cream-gradient: linear-gradient(#e0d5b7, #b4b4b4);
 
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: var(--grey-gradient);
     background-repeat: no-repeat;
     height: 100%;
@@ -88,6 +88,7 @@ body{
 .hours, .minutes{
     padding: 20px;
     font-size: 100px;
+    text-align: center;
 }
 
 .featured-item{
@@ -117,11 +118,11 @@ body{
 .alarm-time{
     text-align: left;
     font-size: 70px;
-    font-weight: 300;
+    /* font-weight: 300; */
 }
 
 .alarm-info{
-    font-size: 15px;
+    font-size: 13px;
     color: #ffffffa5;
     display: flex;
     align-items: center;
@@ -138,9 +139,11 @@ body{
 
 .alarm-edit{
     margin-left: auto;
-    background-color: #b9b9b9ac;
+    background-color: #969696a5;
     color: #ffffffc8;
     border: none;
+
+    transition: background-color 0.1s;
 }
 
 .schedule-overview{
@@ -151,7 +154,7 @@ body{
 }
 
 .action-name{
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .duration{
@@ -159,7 +162,7 @@ body{
 }
 
 .start-time,.end-time{
-    font-size: 15px;
+    font-size: 13px;
     color: #ffffffa5;
     display: inline-block;
 }
@@ -174,23 +177,48 @@ body{
 
 }
 .alarm-options {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     position: sticky;
-    bottom: 12px;
+    bottom: 10px;
 }
 
 .search-alarm, .add-alarm{
+    border: 3px solid #c0c0c0;
+    /* border: none; */
     padding: 18px;
     border-radius: 50%;
-    background-color: #949494;
+    background-color: #c0c0c0;
+    text-decoration: none;
+
+    transition: background-color 0.2s;
 }
 
 .search-alarm{
-    transform: translate(4px);
+    transform: translate(3px);
+    transform-origin: right;
+
 }
 
 .add-alarm{
-    transform: translate(-4px);
+    transform: translate(-3px);
+    /* transform-origin: left; */
 
+}
+
+
+/* -------------TRANSITIONS------------------------- */
+
+.add-alarm:active, .search-alarm:active{
+    background-color: #8e8e8e;
+    /* transform: scale(0.95); */
+}
+
+
+.alarm-edit:active{
+    background-color: #7d7d7da5;
+}
+
+.add-user:active{
+    background-color: #b3b3b325;
 }
