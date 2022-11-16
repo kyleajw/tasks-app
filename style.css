@@ -53,8 +53,8 @@ body{
 }
 
 .add-user img{
-
-    width: 16px
+    
+    width: 24px;
 
 }
 
@@ -166,4 +166,31 @@ body{
 
 .duration span{
     color: #ffffffa5;
+}
+
+.alarm-options img{
+    display: block;
+    width: 24px;
+
+}
+.alarm-options {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    bottom: 12px;
+}
+
+.search-alarm, .add-alarm{
+    padding: 18px;
+    border-radius: 50%;
+    background-color: #949494;
+}
+
+.search-alarm{
+    transform: translate(4px);
+}
+
+.add-alarm{
+    transform: translate(-4px);
+
 }
